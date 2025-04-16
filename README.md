@@ -1,7 +1,7 @@
 `# 📱 Bottom-Sheet-Stepper-Registration
 
 <p align="center">
-  <video src="https://github.com/user-attachments/assets/72bac0a0-bd22-4cec-a864-92ba7becceda"/>
+  <video src="https://github.com/user-attachments/assets/2e836497-d281-4587-aeda-38f3e132f43f"/>
 </p>
     
 ## 📌 Objectif
