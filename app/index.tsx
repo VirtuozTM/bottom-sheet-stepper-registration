@@ -4,18 +4,17 @@ import BottomSheetStepper, {
   StepComponentProps,
 } from "../components/BottomSheetStepper";
 import { Pressable, View, Text } from "react-native";
-import Step1 from "@/components/Step1";
-import Step2 from "@/components/Step2";
-
+import Step1Profile from "@/components/Step1Profile";
+import Step2Avatar from "@/components/Step2Avatar";
+import Step3Confirm from "@/components/Step3Confirm";
 const Step1Wrapper = (props: StepComponentProps) => (
-  <Step1 onNext={props.onNextPress} onBack={props.onBackPress} />
+  <Step1Profile onNext={props.onNextPress} onBack={props.onBackPress} />
 );
 const Step2Wrapper = (props: StepComponentProps) => (
-  <Step2
-    onNext={props.onNextPress}
-    onBack={props.onBackPress}
-    onEnd={props.onEnd}
-  />
+  <Step2Avatar onNext={props.onNextPress} onBack={props.onBackPress} />
+);
+const Step3Wrapper = (props: StepComponentProps) => (
+  <Step3Confirm onBack={props.onBackPress} onEnd={props.onEnd} />
 );
 
 const Index = () => {
@@ -35,13 +34,13 @@ const Index = () => {
         style={{ backgroundColor: "black", padding: 12, borderRadius: 12 }}
       >
         <Text style={{ color: "white", fontSize: 16, fontWeight: "bold" }}>
-          Open Stepper
+          Ouvrir le Stepper
         </Text>
       </Pressable>
 
       <BottomSheetStepper
         ref={stepperRef}
-        steps={[Step1Wrapper, Step2Wrapper]}
+        steps={[Step1Wrapper, Step2Wrapper, Step3Wrapper]}
       />
     </View>
   );
