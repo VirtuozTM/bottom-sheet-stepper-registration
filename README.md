@@ -1,4 +1,4 @@
-`# 📱 Bottom-Sheet-Stepper-Registration
+# 📱 Bottom-Sheet-Stepper-Registration
 
 <p align="center">
   <video src="https://github.com/user-attachments/assets/2e836497-d281-4587-aeda-38f3e132f43f"/>
