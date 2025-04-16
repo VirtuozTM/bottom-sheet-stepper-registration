@@ -83,4 +83,3 @@ Si vous avez des questions ou suggestions, n'hésitez pas à me contacter ! 😊
 📧 [armand_petit@outlook.fr](mailto:armand_petit@outlook.fr)
 
 📅 [Réserver un appel](https://calendly.com/armand_petit/30min)
-`
