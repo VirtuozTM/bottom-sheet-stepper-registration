@@ -21,26 +21,26 @@ const Step1Profile: React.FC<Props> = ({ onNext, onBack }) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerRow}>
-        <Text style={styles.title}>Créer un compte</Text>
+        <Text style={styles.title}>Create an account</Text>
         <TouchableOpacity onPress={onBack} style={styles.xButton}>
           <Feather size={16} name="x" />
         </TouchableOpacity>
       </View>
 
       <Text style={styles.subtitle}>
-        Renseigne tes informations de base pour commencer.
+        Enter your basic information to get started.
       </Text>
 
       <View style={styles.form}>
         <TextInput
           style={styles.input}
-          placeholder="Ton nom"
+          placeholder="Your name"
           value={name}
           onChangeText={setName}
         />
         <TextInput
           style={styles.input}
-          placeholder="Ton email"
+          placeholder="Your email"
           keyboardType="email-address"
           value={email}
           onChangeText={setEmail}
@@ -52,7 +52,7 @@ const Step1Profile: React.FC<Props> = ({ onNext, onBack }) => {
         style={styles.primaryButton}
         activeOpacity={0.9}
       >
-        <Text style={styles.primaryButtonText}>Suivant</Text>
+        <Text style={styles.primaryButtonText}>Next</Text>
       </TouchableOpacity>
     </View>
   );

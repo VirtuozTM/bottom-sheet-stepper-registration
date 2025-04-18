@@ -5,7 +5,7 @@ import Feather from "@expo/vector-icons/Feather";
 
 type Props = {
   onBack: () => void;
-  onEnd?: () => void; // si on veut fermer direct la BottomSheet
+  onEnd?: () => void;
 };
 
 const Step3Confirm: React.FC<Props> = ({ onBack, onEnd }) => {
@@ -19,13 +19,12 @@ const Step3Confirm: React.FC<Props> = ({ onBack, onEnd }) => {
       </View>
 
       <Text style={styles.subtitle}>
-        Voici un récapitulatif de ton futur profil. Appuie sur "Terminer" pour
-        finaliser ton inscription !
+        Here's a summary of your future profile. Press "Finish" to complete your
+        registration!
       </Text>
 
-      {/* Ici on peut imaginer un résumé des infos collectées aux steps précédents */}
       <View style={styles.fakeResume}>
-        <Text style={styles.resumeText}>Nom: John Doe</Text>
+        <Text style={styles.resumeText}>Name: John Doe</Text>
         <Text style={styles.resumeText}>Email: john@doe.com</Text>
         <Text style={styles.resumeText}>Avatar: #2</Text>
       </View>
@@ -37,7 +36,7 @@ const Step3Confirm: React.FC<Props> = ({ onBack, onEnd }) => {
         style={styles.primaryButton}
         activeOpacity={0.9}
       >
-        <Text style={styles.primaryButtonText}>Terminer</Text>
+        <Text style={styles.primaryButtonText}>Finish</Text>
       </TouchableOpacity>
     </View>
   );

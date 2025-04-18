@@ -34,7 +34,7 @@ const Index = () => {
         style={{ backgroundColor: "black", padding: 12, borderRadius: 12 }}
       >
         <Text style={{ color: "white", fontSize: 16, fontWeight: "bold" }}>
-          Ouvrir le Stepper
+          Open Stepper
         </Text>
       </Pressable>
 

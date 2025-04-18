@@ -11,7 +11,6 @@ type Props = {
 const AVATARS = [
   { id: 1, uri: "https://i.pravatar.cc/100?img=1" },
   { id: 2, uri: "https://i.pravatar.cc/100?img=2" },
-  // ... etc
 ];
 
 const Step2Avatar: React.FC<Props> = ({ onNext, onBack }) => {
@@ -20,14 +19,14 @@ const Step2Avatar: React.FC<Props> = ({ onNext, onBack }) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerRow}>
-        <Text style={styles.title}>Choisis un avatar</Text>
+        <Text style={styles.title}>Choose an avatar</Text>
         <TouchableOpacity onPress={onBack} style={styles.xButton}>
           <Feather size={16} name="x" />
         </TouchableOpacity>
       </View>
 
       <Text style={styles.subtitle}>
-        Sélectionne l’image de profil que tu souhaites utiliser.
+        Select the profile picture you want to use.
       </Text>
 
       <View style={styles.avatarsContainer}>
@@ -54,7 +53,7 @@ const Step2Avatar: React.FC<Props> = ({ onNext, onBack }) => {
         disabled={!selectedAvatar}
         activeOpacity={0.9}
       >
-        <Text style={styles.primaryButtonText}>Valider et Continuer</Text>
+        <Text style={styles.primaryButtonText}>Confirm and Continue</Text>
       </TouchableOpacity>
     </View>
   );
